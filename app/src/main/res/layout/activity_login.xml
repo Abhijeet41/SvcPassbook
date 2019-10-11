@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.example.mwservice.svcpassbook.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlHead"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:src="@drawable/svc_logo_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_below="@+id/rlHead"
+        android:background="#D9007bc3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtmPassbook"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="m-Passbook"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtEnter"
+            android:layout_below="@+id/txtmPassbook"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="Please enter your P-PIN number registered with the bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rlUserDetails"
+            android:layout_below="@+id/txtEnter"
+            android:background="#99ccff"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtMobile"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:hint="Enter Mobile Number"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtPPIN"
+                android:layout_below="@+id/edtMobile"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:hint="Enter P-PIN"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtRegister"
+                android:layout_below="@+id/edtPPIN"
+                android:layout_marginTop="10dp"
+                android:text="Register Here"
+                android:textColor="#007dc4"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/txtLogin"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/edtPPIN"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/txtLogin"
+                android:background="#007dc4"/>
+
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_below="@+id/edtPPIN"
+                android:layout_marginTop="10dp"
+                android:text="Forgot P-PIN?"
+                android:textColor="#007dc4"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_below="@+id/txtLogin"
+                android:layout_marginTop="15dp"
+                android:text="Login here"
+                android:textColor="#ffffff"
+                android:background="#007dc4"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/footer" />
+
+
+</RelativeLayout>

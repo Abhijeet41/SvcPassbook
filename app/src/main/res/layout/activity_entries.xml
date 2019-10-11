@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlMain"
+    tools:context="com.example.mwservice.svcpassbook.EntriesActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="#FDA90B"
+        android:id="@+id/relative1"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="Account Number:"
+            android:paddingLeft="15dp"
+            android:id="@+id/eg1"
+            android:textColor="#ffffff"
+            android:textSize="13sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Between"
+            android:textSize="13sp"
+            android:paddingTop="5dp"
+            android:id="@+id/eg13"
+            android:paddingLeft="100dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/txtStartDate" />
+
+        <TextView
+            android:id="@+id/txtDash"
+            android:textSize="13sp"
+            android:paddingTop="5dp"
+            android:text="-"
+            android:paddingLeft="5dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/eg14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtStartDate"
+            android:textSize="13sp"
+            android:paddingTop="5dp"
+            android:text="01/01/2018"
+            android:paddingLeft="5dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/txtDash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  06/02/2018 "
+            android:textSize="13sp"
+            android:paddingTop="5dp"
+            android:id="@+id/eg14"
+            android:textColor="#ffffff"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"
+            android:id="@+id/eg12"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/eg1"
+            android:layout_toEndOf="@+id/eg1" />
+
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/tbrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00adee"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Date"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="80dp"
+                        android:text="Particulars"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="180dp"
+                        android:text="Transaction ID"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="140dp"
+                        android:text="Withdrawl(Dr)"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="60dp"
+                        android:text="Deposit(Cr)"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="80dp"
+                        android:text="Balance"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </TableRow>
+                <View
+                    android:id="@+id/view25"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dp"
+                    android:layout_alignBottom="@+id/linear1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#7403F8" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <include layout="@layout/footer"
+        android:id="@+id/include"></include>
+
+</RelativeLayout>
+

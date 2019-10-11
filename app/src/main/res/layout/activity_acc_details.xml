@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dashboard_bg"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+     <LinearLayout
+         android:id="@+id/llMain"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#D94cc5f3"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:id="@+id/ActNumber"
+                android:text="Account Number"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
+
+            <TextView
+                android:id="@+id/textDate"
+                android:text="Opening Date"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="19dp"
+                android:layout_marginEnd="19dp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:layout_below="@+id/ActNumber"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:text="******51122" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"
+                android:text="12/11/2014"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignRight="@+id/textDate"
+                android:layout_alignEnd="@+id/textDate" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:background="#D9565553"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/textBalance"
+                android:text="Available balance"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textAmount"
+                android:text="Rs. 85,543.91"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@+id/textBalance"
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="13sp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:background="#D96B6A68"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Nihar Atul Prabhu"
+                android:layout_marginLeft="22dp"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Contact Number"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="9821831167"
+                android:textColor="#fff"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="15dp"
+                android:text="Communication"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="GB26, Highland Corporate Center,"
+                android:textColor="#fff"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Thane West. 400607."
+                android:textColor="#fff"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Branch Name"
+                android:textColor="#fff"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="(548) Kapurbawdi Thane"
+                android:textColor="#fff"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llViewEntries"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#007dc4"
+            android:orientation="horizontal"
+            android:layout_marginLeft="13sp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="0dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="15sp"
+                android:text="VIEW PASSBOOK ENTRIES"
+                android:textSize="18sp"
+                android:paddingBottom="15sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="50dp"
+                android:id="@+id/imgEntries"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="35dp"
+                android:background="@drawable/ic_account_balance_wallet_white_24dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+        <include layout="@layout/footer"/>
+     </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
